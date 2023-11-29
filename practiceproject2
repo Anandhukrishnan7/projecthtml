@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head> </head>
+  <body>
+    <header>
+      <h2>Already Registered?<u>LOGIN</u> now</h2>
+      <label for="eml">Email</label>
+      <input type="email" id="eml" placeholder="abc@gmail.com" required />
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" required />
+      <button>
+        <img
+          src="https://ninjasfiles.s3.amazonaws.com/0000000000001394.png"
+          width="40"
+          height="10"
+          required
+        />Login
+      </button>
+      <hr />
+      <br />
+      <form action="" method="post"></form>
+    </header>
+
+    <br />
+    <br />
+
+    <main>
+      <section>
+        <a href="blog.codingninjas.in"><u>Coding Ninjas Blogs</u></a
+        ><br /><br />
+        <img
+          src="https://ninjasfiles.s3.amazonaws.com/0000000000001395.png"
+          width="1600"
+          height="300"
+        /><br /><br />
+        <hr />
+        <br />
+        <h2><u>REGISTRATION</u></h2>
+        First name: &emsp;&emsp;&emsp;<input type="text" required /><br /><br />
+        Last name: &emsp;&emsp;&emsp;<input type="text" required /><br /><br />
+        <label for="num"
+          >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Flat No./House
+          No</label
+        >
+        <input type="number" id="num" required /><br /><br />
+        <label for="add"
+          >Current Address:&emsp;Locality&emsp;&emsp;&emsp;&ensp;&emsp;</label
+        >
+        <input type="text" id="add" required /><br /><br />
+        <label for="city"
+          >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;City&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;</label
+        >
+        <input type="text" id="city" required />
+      </section>
+
+      <br />
+      <br />
+
+      <section>
+        <b>
+          Is Current address and Permanent address same?<input
+            type="radio"
+            name="address"
+          />Yes <input type="radio" name="address" />No</b
+        ><br /><br />
+        <!-- <label for="eml">Email&emsp;&emsp;&emsp;&emsp;&ensp;</label>
+        <input
+          type="email"
+          id="eml"
+          placeholder="abc@gmail.com"
+          required -->
+        /><br /><br />
+        <table>
+          <tr>
+            <td>Email:</td>
+            <td><input type ="text" placeholder="abc@gmail.com"></td>
+
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type ="password"></td>
+          </tr>
+        </table>
+        <!-- <label for="pwd">Password&emsp;&emsp;&emsp;</label>
+        <input type="password" id="pwd" required /><br><br> -->
+        <button>Register</button>
+
+        <form action="" method="post">
+          <table></table>
+        </form>
+      </section>
+    </main>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</body>
+</html>
